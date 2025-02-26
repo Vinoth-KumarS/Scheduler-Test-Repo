@@ -1,9 +1,9 @@
 name: Scheduled Trigger - MAIN
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'  # Runs every 15 minutes
   workflow_dispatch:
+  schedule:
+    - cron: '*/1 * * * *'
 
 
 jobs:
