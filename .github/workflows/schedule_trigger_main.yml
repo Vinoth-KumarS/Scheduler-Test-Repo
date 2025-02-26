@@ -1,7 +1,6 @@
 name: Scheduled Trigger - MAIN
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: '*/1 * * * *'
 
