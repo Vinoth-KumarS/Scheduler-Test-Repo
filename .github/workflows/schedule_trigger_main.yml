@@ -2,7 +2,8 @@ name: Scheduled Trigger - MAIN
 
 on:
   schedule:
-    - cron: 0 3 * * *
+    - cron: "*/2 * * * *"
+
 
 jobs:
   run-script:

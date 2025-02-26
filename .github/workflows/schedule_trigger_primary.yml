@@ -2,7 +2,7 @@ name: Scheduled Trigger - Vinoth
 
 on:
   schedule:
-    - cron: 0 3 * * *
+    - cron: "*/2 * * * *"
 
 jobs:
   run-script:
