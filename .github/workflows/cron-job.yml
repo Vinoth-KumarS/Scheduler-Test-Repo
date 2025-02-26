@@ -1,0 +1,18 @@
+name: Scheduled Job
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Runs every 5 minutes
+  workflow_dispatch:  # Allows manual trigger of the workflow
+
+jobs:
+  run-cron-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Your Script
+        run: |
+          echo "Running scheduled task..."
+          # Add your script or command here
