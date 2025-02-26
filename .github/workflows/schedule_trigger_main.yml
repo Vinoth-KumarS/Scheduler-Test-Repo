@@ -1,4 +1,4 @@
-name: Scheduled Trigger - MAIN
+name: Scheduled Trigger
 
 on:
   schedule:
