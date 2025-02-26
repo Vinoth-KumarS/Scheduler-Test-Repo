@@ -6,13 +6,11 @@ on:
 
 jobs:
   run-script:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository (Main Branch Only)
-        uses: actions/checkout@v4
-        with:
-          ref: main  # Ensures it checks out the main branch
-
-      - name: Print Time
-        run: echo "Workflow triggered on MAIN branch at $(date)"
+      - name: Print Job Status Every 30 Seconds
+        run: |
+          echo "JOB is working - First Run"
+          sleep 30
+          echo "JOB is working - Second Run"
