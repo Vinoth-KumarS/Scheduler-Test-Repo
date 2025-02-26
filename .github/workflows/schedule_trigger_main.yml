@@ -2,9 +2,9 @@ name: Scheduled Trigger - MAIN
 
 on:
   schedule:
-    - cron: '*/1 * * * *'  # Runs every 1 minute
+    - cron: '*/5 * * * *'  # Runs every 5 minutes
+  workflow_dispatch:
 
-  workflow_dispatch:  # Allows manual trigger as well
 
 jobs:
   run-script:
